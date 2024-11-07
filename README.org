@@ -1,0 +1,35 @@
+#+title: Readme
+
+#+begin_src
+julia ThinCategory.jl
+#+end_src
+is supposed to produce
+#+begin_src
+=== Simple Example ===
+Category C relations:
+a → Set([:a, :b, :c])
+b → Set([:b, :c])
+c → Set([:c])
+
+Category D relations:
+y → Set([:y])
+x → Set([:y, :x])
+
+Found 4 functors:
+Functor 1: a→x b→x c→x
+Functor 2: a→x b→x c→y
+Functor 3: a→x b→y c→y
+Functor 4: a→y b→y c→y
+
+Natural transformations:
+F1 ⇒ F1 exists
+F1 ⇒ F2 exists
+F1 ⇒ F3 exists
+F1 ⇒ F4 exists
+F2 ⇒ F2 exists
+F2 ⇒ F3 exists
+F2 ⇒ F4 exists
+F3 ⇒ F3 exists
+F3 ⇒ F4 exists
+F4 ⇒ F4 exists
+#+end_src
